@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-bar {
+    background-color: rgb(43,48,53); 
+}
+
+.img-logo {
+    width: 35px;
+    height: 30px;
+}
+
+.admin-form{
+    border: 1px solid white;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid white;
+}
+
+.action-group{
+    display: flex;
+    gap: 10px;;
+
+    .action-btn{
+        width: 22px;
+    }
+}
