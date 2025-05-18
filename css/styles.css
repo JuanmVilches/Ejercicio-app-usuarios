@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 .nav-bar {
-    background-color: rgb(43,48,53); 
+    background-color: rgb(43, 48, 53);
 }
 
 .img-logo {
@@ -12,7 +13,7 @@
     height: 30px;
 }
 
-.admin-form{
+.admin-form {
     border: 1px solid white;
     margin: 0 auto;
     max-width: 600px;
@@ -23,11 +24,21 @@ table {
     border: 1px solid white;
 }
 
-.action-group{
+.action-group {
     display: flex;
-    gap: 10px;;
+    justify-content: center;
+    gap: 16px;
+    padding: 8px;
 
-    .action-btn{
-        width: 22px;
+    .button-icon {
+        border-radius: 8px;
+        background-color: white;
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+        color: black;
+        &.trash {
+            color: red;
+        }
     }
 }

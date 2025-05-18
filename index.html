@@ -24,6 +24,10 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
 </head>
 
 <body>
@@ -50,23 +54,24 @@
                     <div class="mb-3">
                         <label for="nombre" class="form-label">Ingrese su nombre</label>
                         <input pattern="^[a-zA-Z]+( [a-zA-Z]+)*$" type="text" name="name" id="nombre"
-                            class="form-control" required>
+                            class="form-control" required minlength="3" maxlength="20">
                     </div>
                     <div class="mb-3">
                         <label for="mail" class="form-label">Ingrese su email</label>
                         <input type="text" name="mail" id="mail" class="form-control"
-                            pattern="[A-Za-z0-9._+\-']+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$" required>
+                            pattern="[A-Za-z0-9._+\-']+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$" required maxlength="30">
                     </div>
                     <div class="mb-3">
                         <label for="telefono" class="form-label">Ingrese su número de teléfono</label>
-                        <input type="number" name="phone" id="telefono" class="form-control" required>
+                        <input type="number" name="phone" id="telefono" class="form-control" required minlength="8"
+                            maxlength="20">
                     </div>
                     <div class="input-container">
                         <label for="fecha" class="form-label">Ingrese su fecha de nacimiento</label>
                         <input type="date" name="date" id="fecha" class="form-control" required>
                     </div>
 
-                    <button type="submit" class="btn btn-primary mt-3">Cargar</button>
+                    <button type="submit" class="btn btn-primary mt-3 w-100" title="Cargar usuario">Cargar</button>
                 </form>
             </div>
             <div class="col-xl-8 text-center">
@@ -100,4 +105,5 @@
 
 
 <script src="/js/script.js"></script>
+
 </html>
